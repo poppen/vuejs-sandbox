@@ -1,0 +1,8 @@
+{
+  "name": "vuejs-sandbox",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "vue": "~0.11.5"
+  }
+}
