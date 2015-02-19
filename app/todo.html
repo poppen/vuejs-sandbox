@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		li.done { text-decoration: line-through; }
+	</style>
+</head>
+<body>
+	<h1>Todo List</h1>
+	<div id="todo">
+		<input type="text" v-model="todo" v-on="keyup:addTodo | key enter">
+		<ol>
+			<li class="{{t.done ? 'done' : ''}}" v-repeat="t:todos" v-on="click:toggle($index)">{{t.content}}</li>
+		</ol>
+	</div>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/vue/dist/vue.js"></script>
+	<script src="scripts/todo.js"></script>
+</body>
+</html>
